@@ -30,6 +30,19 @@ li {
     list-style: none;
 }
 
+img,
+video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 100%;
+}
+
+body {
+    background: var(--bodyColor);
+}
 
 .section {
     padding: 4rem 0 2rem;
@@ -45,7 +58,30 @@ li {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 .icon {
     font-size: 2rem;
     cursor: pointer;
+}
+
+.btn {
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
 }
